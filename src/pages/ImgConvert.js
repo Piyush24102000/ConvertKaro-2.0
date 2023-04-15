@@ -18,7 +18,7 @@ const ImgConvert = () => {
            const formData = new FormData();
            formData.append("image", file);
    
-           const response = await fetch(`http://localhost:3000/api/imgConvert?format=${format}`, {
+           const response = await fetch(`https://convert-karo.vercel.app/api/imgConvert?format=${format}`, {
                method: "POST",
                body: formData,
            })
